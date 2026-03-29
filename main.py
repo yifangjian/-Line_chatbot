@@ -181,7 +181,7 @@ def create_guide_flex():
         "contents": [
           {
             "type": "text",
-            "text": "📖 N1 衝刺助教使用說明",
+            "text": "📖 使用指南",
             "weight": "bold",
             "size": "xl",
             "color": "#1DB446"
@@ -198,7 +198,10 @@ def create_guide_flex():
                 "spacing": "sm",
                 "contents": [
                   {"type": "text", "text": "🐰", "flex": 1, "size": "sm"},
-                  {"type": "text", "text": "模式切換：點選選單「文法」、「単語」或「諺語」開始練習。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                      {"type": "text", "text": "1. 開始測驗", "weight": "bold", "color": "#1DB446", "size": "sm"},
+                      {"type": "text", "text": "點選下方選單「文法」、「単語」或「諺語」開始練習。", "wrap": True, "color": "#666666", "size": "sm"}
+                  ]}
                 ]
               },
               {
@@ -206,8 +209,11 @@ def create_guide_flex():
                 "layout": "baseline",
                 "spacing": "sm",
                 "contents": [
-                  {"type": "text", "text": "🎲", "flex": 1, "size": "sm"},
-                  {"type": "text", "text": "綜合測驗：隨機從所有題目中抽題，挑戰妳的反應力！", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                  {"type": "text", "text": "綜合", "flex": 1, "size": "sm"},
+                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                      {"type": "text", "text": "2. 綜合測驗", "weight": "bold", "color": "#1DB446", "size": "sm"},
+                      {"type": "text", "text": "隨機從所有題目中抽題，挑戰妳的反應力！", "wrap": True, "color": "#666666", "size": "sm"}
+                  ]}
                 ]
               },
               {
@@ -215,8 +221,11 @@ def create_guide_flex():
                 "layout": "baseline",
                 "spacing": "sm",
                 "contents": [
-                  {"type": "text", "text": "🗡️", "flex": 1, "size": "sm"},
-                  {"type": "text", "text": "錯題復仇：按「錯題本」會專門練習妳答錯過的題目。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                  {"type": "text", "text": "錯題本", "flex": 1, "size": "sm"},
+                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                      {"type": "text", "text": "3. 錯題復仇", "weight": "bold", "color": "#1DB446", "size": "sm"},
+                      {"type": "text", "text": "按「錯題本」會專門練習妳答錯過的題目。", "wrap": True, "color": "#666666", "size": "sm"}
+                  ]}
                 ]
               },
               {
@@ -225,7 +234,10 @@ def create_guide_flex():
                 "spacing": "sm",
                 "contents": [
                   {"type": "text", "text": "📚", "flex": 1, "size": "sm"},
-                  {"type": "text", "text": "諺語查詢：直接輸入數字 (1-200) 可查閱特定諺語卡。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                      {"type": "text", "text": "4. 諺語查詢", "weight": "bold", "color": "#1DB446", "size": "sm"},
+                      {"type": "text", "text": "直接輸入數字 (1-200) 可查閱特定諺語卡。", "wrap": True, "color": "#666666", "size": "sm"}
+                  ]}
                 ]
               }
             ]
@@ -235,7 +247,7 @@ def create_guide_flex():
             "layout": "vertical",
             "margin": "xl",
             "contents": [
-              {"type": "text", "text": "✨ 小提醒：長按訊息可以複製日文句子喔！", "size": "xxs", "color": "#aaaaaa", "wrap": True}
+              {"type": "text", "text": "✨ 長按句子可以複製日文句子喔！", "size": "xxs", "color": "#aaaaaa", "wrap": True}
             ]
           }
         ]
