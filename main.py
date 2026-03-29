@@ -167,17 +167,79 @@ def create_ai_flex(analysis_text):
 
 def create_guide_flex():
     bubble_json = {
-        "type": "bubble",
-        "header": { "type": "box", "layout": "vertical", "contents": [
-            {"type": "text", "text": "📖 助教使用說明", "weight": "bold", "color": "#FFFFFF", "size": "md"}
-        ], "backgroundColor": "#1DB446" },
-        "body": { "type": "box", "layout": "vertical", "spacing": "md", "contents": [
-            {"type": "text", "text": "歡迎使用 N1 衝刺助教！", "weight": "bold", "size": "sm"},
-            {"type": "text", "text": "🔹 測驗模式：點選下方選單「文法」、「単語」或「諺語」開始練習。", "wrap": True, "size": "xs", "color": "#666666"},
-            {"type": "text", "text": "🔹 綜合測驗：隨機從所有題目中抽題。", "wrap": True, "size": "xs", "color": "#666666"},
-            {"type": "text", "text": "🔹 錯題復仇：按「錯題本」會專門練習妳答錯過的題目。", "wrap": True, "size": "xs", "color": "#666666"},
-            {"type": "text", "text": "🔹 諺語查詢：直接輸入數字 (1-200) 可查閱特定諺語卡。", "wrap": True, "size": "xs", "color": "#666666"}
-        ]}
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "📖 N1 衝刺助教使用說明",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#1DB446"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {"type": "text", "text": "🐰", "flex": 1, "size": "sm"},
+                  {"type": "text", "text": "模式切換：點選選單「文法」、「単語」或「諺語」開始練習。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {"type": "text", "text": "🎲", "flex": 1, "size": "sm"},
+                  {"type": "text", "text": "綜合測驗：隨機從所有題目中抽題，挑戰妳的反應力！", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {"type": "text", "text": "🗡️", "flex": 1, "size": "sm"},
+                  {"type": "text", "text": "錯題復仇：按「錯題本」會專門練習妳答錯過的題目。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {"type": "text", "text": "📚", "flex": 1, "size": "sm"},
+                  {"type": "text", "text": "諺語查詢：直接輸入數字 (1-200) 可查閱特定諺語卡。", "wrap": True, "color": "#666666", "size": "sm", "flex": 9}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "xl",
+            "contents": [
+              {"type": "text", "text": "✨ 小提醒：長按訊息可以複製日文句子喔！", "size": "xxs", "color": "#aaaaaa", "wrap": True}
+            ]
+          }
+        ]
+      }
     }
     return FlexMessage(alt_text="使用指南", contents=FlexContainer.from_dict(bubble_json))
 
