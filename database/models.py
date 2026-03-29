@@ -42,3 +42,12 @@ class AnswerLog(Base):
     selected_option = Column(Integer)
     is_correct = Column(Boolean)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+class Proverb(Base):
+    __tablename__ = "Proverb"
+    id = Column(Integer, primary_key=True)  # 編號 (1-120)
+    kanji = Column(String)                  # 全漢字寫法
+    reading = Column(String)                # 平假名讀音
+    chinese_meaning = Column(String)        # 中文意思/對應成語
+    origin = Column(Text)                   # 由來・出處
+    example_sentence = Column(Text)         # 情境例句

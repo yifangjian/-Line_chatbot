@@ -1,14 +1,14 @@
-# 隱藏機密密碼檔
+# 絕對不能外流的機密檔案
 .env
 
-# 隱藏笨重的虛擬環境
-venv/
-.venv/
-
-# 隱藏 Python 系統暫存檔
+# Python 產生的暫存檔 (不需要上傳)
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 
-# 隱藏 Mac 系統產生的垃圾檔
+# 虛擬環境 (如果妳有建的話)
+venv/
+env/
+
+# 其他不需要上傳的系統暫存檔
 .DS_Store
