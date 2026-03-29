@@ -1,0 +1,14 @@
+# 隱藏機密密碼檔
+.env
+
+# 隱藏笨重的虛擬環境
+venv/
+.venv/
+
+# 隱藏 Python 系統暫存檔
+__pycache__/
+*.pyc
+*.pyo
+
+# 隱藏 Mac 系統產生的垃圾檔
+.DS_Store
