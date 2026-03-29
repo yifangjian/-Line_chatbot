@@ -307,7 +307,7 @@ async def callback(request: Request):
 @handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
     user_msg, user_id = event.message.text, event.source.user_id
-    print(f"📩 [訊息進來了] 用戶說了: {user_msg}")
+    print(f"📩 [訊息進來了] 用戶說了: '{user_msg}' (長度: {len(user_msg)}, 編碼: {user_msg.encode()})")
     
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
