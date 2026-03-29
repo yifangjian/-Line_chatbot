@@ -436,7 +436,7 @@ def handle_message(event):
                         
                         if is_correct: 
                             user.session_correct = (user.session_correct or 0) + 1
-                            if user.current_category == "錯題":
+                            if user.current_category and user.current_category.endswith("_錯題"):
                                 db.query(models.AnswerLog).filter(
                                     models.AnswerLog.user_id == user.id,
                                     models.AnswerLog.question_id == q.id,
