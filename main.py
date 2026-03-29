@@ -194,11 +194,11 @@ def create_guide_flex():
             "contents": [
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "horizontal",
                 "spacing": "md",
                 "contents": [
-                  {"type": "text", "text": "🐰", "flex": 1, "size": "sm", "align": "center"},
-                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                  {"type": "text", "text": "🐰", "flex": 0, "size": "sm"},
+                  {"type": "box", "layout": "vertical", "flex": 5, "contents": [
                       {"type": "text", "text": "1. 開始測驗", "weight": "bold", "color": "#1DB446", "size": "sm"},
                       {"type": "text", "text": "點選下方選單「文法」、「単語」或「諺語」開始練習。", "wrap": True, "color": "#666666", "size": "sm"}
                   ]}
@@ -206,11 +206,11 @@ def create_guide_flex():
               },
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "horizontal",
                 "spacing": "md",
                 "contents": [
-                  {"type": "text", "text": "綜合", "flex": 2, "size": "xs", "color": "#888888", "align": "center"},
-                  {"type": "box", "layout": "vertical", "flex": 8, "contents": [
+                  {"type": "text", "text": "綜合", "flex": 0, "size": "xs", "color": "#888888"},
+                  {"type": "box", "layout": "vertical", "flex": 5, "contents": [
                       {"type": "text", "text": "2. 綜合測驗", "weight": "bold", "color": "#1DB446", "size": "sm"},
                       {"type": "text", "text": "隨機從所有題目中抽題，挑戰妳的反應力！", "wrap": True, "color": "#666666", "size": "sm"}
                   ]}
@@ -218,11 +218,11 @@ def create_guide_flex():
               },
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "horizontal",
                 "spacing": "md",
                 "contents": [
-                  {"type": "text", "text": "錯題本", "flex": 2, "size": "xs", "color": "#888888", "align": "center"},
-                  {"type": "box", "layout": "vertical", "flex": 8, "contents": [
+                  {"type": "text", "text": "錯題本", "flex": 0, "size": "xs", "color": "#888888"},
+                  {"type": "box", "layout": "vertical", "flex": 5, "contents": [
                       {"type": "text", "text": "3. 錯題復仇", "weight": "bold", "color": "#1DB446", "size": "sm"},
                       {"type": "text", "text": "按「錯題本」會專門練習妳答錯過的題目。", "wrap": True, "color": "#666666", "size": "sm"}
                   ]}
@@ -230,13 +230,13 @@ def create_guide_flex():
               },
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "horizontal",
                 "spacing": "md",
                 "contents": [
-                  {"type": "text", "text": "📚", "flex": 1, "size": "sm", "align": "center"},
-                  {"type": "box", "layout": "vertical", "flex": 9, "contents": [
+                  {"type": "text", "text": "📚", "flex": 0, "size": "sm"},
+                  {"type": "box", "layout": "vertical", "flex": 5, "contents": [
                       {"type": "text", "text": "4. 諺語查詢", "weight": "bold", "color": "#1DB446", "size": "sm"},
-                      {"type": "text", "text": "直接輸入數字 (1-200) 可查閱特定諺語卡。", "wrap": True, "color": "#666666", "size": "sm"}
+                      {"type": "text", "text": "直接輸入數字 (1-120) 可查閱特定諺語卡。", "wrap": True, "color": "#666666", "size": "sm"}
                   ]}
                 ]
               }
